@@ -1,0 +1,750 @@
+*{
+    margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+    list-style: none;
+	/* transition: .2s linear; */
+	
+}
+
+:root{
+    --bgcolor:#FFFFF0;
+    --btn:#FEA405;
+    --textcolor:#8AA624;
+    --content:#DBE4C9;
+    --black-color:rgb(68, 65, 65);
+}
+
+html{
+	
+	scroll-behavior: smooth;
+	scroll-padding: 6rem;
+	overflow-x: hidden;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--bgcolor);
+   
+}
+
+ .header{
+    width: 100%;
+    background-color: var(--textcolor);
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 2px 2px 1rem  var(--btn);
+
+}
+ .header .logo img{
+    height: 100px;
+    justify-content:flex-start ;
+    padding-left: 1rem;
+}
+.header .logo img:hover{
+    transform: scale(1.3);
+    transition: 0.5s;
+}
+ .header .title{
+    font-size: 2rem;
+    padding-top: 2rem;
+    color: var(--bgcolor);
+    padding-left: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif, Times, serif;
+}
+ .header .title span{
+    color: var(--btn);
+    padding-left: 0.1rem;
+}
+ .header .navbar{
+    padding-top:2.5rem ;
+    padding-left:10rem;
+    
+}
+ .header .navbar nav a{
+    text-decoration: none;
+    color: var(--bgcolor);
+    font-size: 1.1rem;
+    padding: 0.3rem;
+    
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, 'Arial Narrow', Arial, sans-serif;
+    border: none;
+}
+ .header .navbar nav a:hover{
+    background-color: var(--btn);
+    /* transform: scale(1.1); */
+    transition: all .5s;
+    border-radius: 5px;
+}
+.active{
+    background-color: var(--btn);
+    /* transition: all .5s; */
+    border-radius: 5px;
+}
+
+ .header .btn{
+    padding-top: 1.8rem;
+    padding-left: 5rem;
+}
+ .header .btn button{
+    padding: 0.7rem;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--btn);
+    color: var(--bgcolor);
+    font-size: 16px;
+    cursor: pointer;
+    /* transition: all 0.2s; */
+}
+ .header .btn button:hover{
+    background-color: var(--bgcolor);
+    color: var(--btn);
+    font-weight: bold;
+    box-shadow: 5px 5px 0.5rem var(--btn);
+    transition: all 0.5s;
+}
+
+.home{
+    height: 80vh;
+    width: 100vw;
+    margin-top: 10px;
+    /* border: 1px solid black; */
+    background-image: url(/CateringWebsiteUsingHtml&CSS/assets/images/bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    position: relative;
+    top: 5.5rem;
+    transition: all ease-in 0.5s;
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+.home h3{
+    position: absolute;
+    top:3rem;
+    left: 1rem;
+    font-size: 1.5rem;
+    color: var(--bgcolor);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    transition: all ease-in 0.5s;
+}
+.home p{
+    position: absolute;
+    top: 6rem;
+    left: 3rem;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    font-size:1rem ;
+    color: var(--content);
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    transition: all ease-in 1s;
+    text-transform: capitalize;
+}
+
+ .btn1{
+    position: absolute;
+    top: 12rem;
+    left: 3rem;
+    padding: 0.7rem;
+    border-radius: 10px;
+   border: none;
+    background-color: var(--btn);
+    color: var(--bgcolor);
+    font-size: 16px;
+    cursor: pointer;
+    
+   
+
+}
+.btn1:hover{
+    background-color: var(--bgcolor);
+    color: var(--btn);
+    font-weight: bold;
+    box-shadow: 5px 5px 0.5rem var(--btn);
+    transition: all 0.5s;
+}
+.about{
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 5.5rem;
+}
+.about img{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    height:30rem;
+    width: 38rem;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+   
+   
+}
+.about img:hover{
+    transform: scale(1.1);
+    transition:ease-in-out 0.5s;
+}
+.about h2{
+    position: absolute;
+    right: 20rem;
+    top: 3rem;
+    font-size: 2.2rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    color: var(--textcolor);
+    transition: ease-in .2s;
+}
+.about h4{
+    position: absolute;
+    right: 22rem;
+    top: 10rem;
+    font-size: 1.1rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    color: var(--black-color);
+    transition: ease-in .3s;
+}
+
+.about p{
+    position: absolute;
+    right: 10rem;
+    left: 45rem;
+    top: 13rem;
+    font-size: 1.1rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    color: var(--black-color);
+    transition: ease-in .3s;
+    word-spacing: 5px;
+    letter-spacing:1px ;
+    line-height: 40px;
+    transition: ease-in .4s;
+
+}
+.about .btn1{
+    position: absolute;
+    left: 60rem;
+    top: 28rem;
+}
+.headings{
+    margin-top: 3rem;
+    /* border: 1px solid black; */
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 2.2rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    color: var(--textcolor);
+    transition: ease-in .2s;
+}
+.services{
+    /* height: 90vh; */
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* position: relative; */
+    /* top: 5.5rem; */
+    /* border: 1px solid black; */
+    margin-top: 1rem;
+   
+}
+
+
+.services .cards{
+    height: 68vh;
+    width: 20vw;
+    /* border: 1px solid black; */
+    margin-top: 1rem;
+    padding-top: 1rem;
+    
+}
+.services .cards img{ 
+    height:34vh ;
+    width: 20vw;
+    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+    
+}
+.services .cards img:hover{
+    transform: scale(1.1);
+    transition:all ease-in-out .5s ;
+}
+.services .cards h3{
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    color: var(--textcolor);
+} 
+.services .cards p{
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 1rem;
+    text-transform: capitalize;
+    color:var(--black-color);
+    word-spacing: 1px;
+    letter-spacing: 2px;
+    
+}
+.services .cards .btn2{
+    
+    padding: 0.5rem;
+   margin-top: 1rem;
+   margin-left: 5rem;
+    border-radius: 10px;
+   border: none;
+    background-color: var(--btn);
+    color: var(--bgcolor);
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+ .services .cards .btn2:hover{
+    background-color: var(--bgcolor);
+    color: var(--btn);
+    font-weight: bold;
+    box-shadow: 5px 5px 0.5rem var(--btn);
+    transform: translateX(5px);
+    transition: all 0.5s;
+}
+
+.gallery{
+    width: 100vw;
+    /* border: 1px solid black; */
+    margin-top: 2rem;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+}
+.gallery .heading{
+    /* margin-top: 3rem; */
+    /* border: 1px solid black; */
+    padding-top: 1rem 0rem;
+    text-align: center;
+    font-size: 2.2rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    color: var(--textcolor);
+    transition: ease-in .2s;
+    
+}
+.gallery .boxes{
+    /* border: 1px solid black; */
+    width: 80vw;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    height: 75vh;
+    gap: 0.5rem;
+    padding: .3rem;
+
+}
+.gallery .boxes .box{
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    
+}
+.gallery .boxes .box:hover{
+    transform: scale(1.3);
+    transition: 0.5s;
+}
+.gallery .box1{
+    grid-row: 1/3;
+    background-image: url(/CateringWebsiteUsingHtml&CSS/assets/images/g1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gallery .box2{
+    grid-column: 2/4;
+    grid-row: 1/3;
+    background-image: url(/CateringWebsiteUsingHtml&CSS/assets/images/g2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.gallery .box3{
+     background-image: url(/CateringWebsiteUsingHtml&CSS/assets/images/g3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.gallery .box4{
+     background-image: url(/CateringWebsiteUsingHtml&CSS/assets/images/g4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gallery .box5{
+   
+     background-image: url(/CateringWebsiteUsingHtml&CSS/assets/images/g5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.videos{
+    
+    width: 100vw;
+    /* border: 1px solid black; */
+    margin-top: 2rem;
+    margin-bottom:1rem;
+}
+.videos .heading{
+     /* border: 1px solid black; */
+    padding-top: 1rem 0rem;
+    text-align: center;
+    font-size: 2.2rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    color: var(--textcolor);
+    transition: ease-in .2s;
+}
+.videos .boxes{
+    width: 80vw;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    height: 70vh;
+    gap: 1rem;
+    padding: .3rem;
+}
+.videos .boxes .box{
+    /* border: 1px solid black; */
+    padding-bottom: 1rem;
+    
+}
+.videos .box1{
+    grid-row: 1/3;
+    
+}
+.videos .box1 video{
+    border-radius: 30px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.videos .box1 video:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.videos .box2{
+    grid-column: 2/4;
+    grid-row: 1/3;
+}
+.videos .box2 video{
+    border-radius: 30px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.videos .box2 video:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.testimonials{
+    width: 100vw;
+    /* border: 1px solid black; */
+    margin-top: 2rem;
+    margin-bottom:1rem;
+}
+.testimonials .heading{
+    /* border: 1px solid black; */
+    padding-top: 1rem 0rem;
+    text-align: center;
+    font-size: 2.2rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    color: var(--textcolor);
+    transition: ease-in .2s;
+}
+.testimonials .boxes{
+   /* border: 1px solid black;  */
+    width: 80vw;
+    margin: 5px auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 70vh;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
+    /* gap: 10px; */
+    
+}
+.testimonials .boxes .box{
+   
+}
+.testimonials .boxes .box .para{
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 1.5rem 0.5rem 0rem 0.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--black-color);
+   
+}
+.testimonials .boxes .box .para img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    
+}
+.testimonials .boxes .box .bg{
+    margin-top: 2rem;
+    background-color: var(--textcolor);
+    height: 12rem;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    color: black;
+    position: relative;
+  
+   
+    
+}
+.testimonials .boxes .box .bg img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    /* border: 1px solid black; */
+   
+    position: absolute;
+    left: 9rem;
+    top: 1rem;
+    
+}
+.testimonials .boxes .box .bg p{
+    position: absolute;
+    top: 5rem;
+    left: 7.5rem;
+    color: var(--bgcolor);
+    font-size: 1.2rem;
+}
+.testimonials .boxes .box .bg pre{
+    position: absolute;
+    top:7.5rem ;
+    left: 8rem;
+}
+
+
+.testimonials .boxes .box{
+ /* border: 1px solid black; */
+ width: 25vw;
+  box-shadow: 10px 10px 1rem var(--textcolor);
+    border-radius: 25px;
+}
+.testimonials .boxes .box:hover{
+    transform: scaleX(1.1);
+    transition: .5s;
+}
+
+.contact{
+    
+    width: 100vw;
+    /* border: 1px solid black; */
+    margin-top: 2rem;
+    margin-bottom:1rem;
+    padding-bottom: 1rem;
+}
+.contact .heading{
+    padding-top: 1rem 0rem;
+    text-align: center;
+    font-size: 2.2rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    color: var(--textcolor);
+    transition: ease-in .2s;
+}
+.contact .boxes{
+    /* border: 1px solid black; */
+     width: 90vw;
+    margin: 5px auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 70vh;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.contact .box1{
+    /* border: 1px solid black; */
+    width: 30vw;
+    
+}
+.contact .box1 iframe{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    box-shadow: 10px 10px 1rem var(--content);
+}
+.contact .box1 iframe:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.contact .box2{
+    /* border: 1px solid black; */
+    width: 50vw;
+    
+}
+.contact .box2 .icon{
+    font-size: 1.5rem;
+    color: var(--textcolor);
+   
+    
+    
+}
+.contact .box2 .headingg{
+    font-size: 1.2rem;
+    padding-left: 1.5rem;
+    font-weight: bold;
+   
+
+}
+
+.contact .box2  .details{
+    padding-top: 0.5rem;
+    padding-left: 4.5rem;
+    color: var(--black-color);
+    font-size: 1.2rem;
+}
+.contact .box2 .owner{
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+.contact .box2 .add{
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+.contact .box2 .email{
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+.contact .box2 .mobile{
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+.contact .box2 .time{
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+
+.booking{
+     width: 100vw;
+    /* border: 1px solid black; */
+    margin-top: 2rem;
+    margin-bottom:0rem;
+    padding-bottom: 1rem;
+}
+.booking .heading{
+     padding-top: 1rem 0rem;
+    text-align: center;
+    font-size: 2.2rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    color: var(--textcolor);
+    transition: ease-in .2s;
+}
+.booking .boxes{
+    /* border: 1px solid black; */
+     width: 60vw;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 70vh;
+    padding-top: .5rem;
+    
+    
+    
+}
+.booking .boxes .input{
+    height:2.5rem ;
+    width: 32vw;
+    text-align: center;
+    padding-top: .1rem;
+    margin-top: 1.5rem;
+   border-radius: 10px;
+   font-weight: bold;
+    border: 2px solid var(--textcolor);
+    box-shadow: 5px 5px 1rem var(--textcolor);
+}
+.booking .boxes .input:hover{
+    border: 2px double var(--btn);
+    
+}
+.booking .boxes .msg{
+    height:5rem ;
+    width: 32vw;
+    text-align: center;
+    padding-top: 2rem;
+    margin-top: 1.5rem;
+   border-radius: 10px;
+   font-weight: bold;
+    box-shadow: 5px 5px 1rem var(--textcolor);
+border: 2px solid var(--textcolor);
+}
+.booking .boxes .msg:hover{
+    border: 2px double var(--btn);
+}
+.booking .boxes .submit{
+    margin-top: 2rem;
+    height: 2.5rem;
+    width:6rem;
+    margin-left: 5rem;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--btn);
+    color: var(--bgcolor);
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+.booking .boxes .submit:hover{
+    background-color: var(--bgcolor);
+    color: var(--btn);
+    font-weight: bold;
+    box-shadow: 5px 5px 0.5rem var(--btn);
+    transition: all 0.5s;
+}
+.footer{
+    width: 100vw;
+    height: 7vh;
+    background-color: var(--textcolor);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.footer .text{
+    padding:0.8rem ;
+    font-size: 1rem;
+    color: var(--bgcolor);
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+
+.footer .smedia{
+    padding:0.8rem ;
+    padding-right: 2rem;
+    font-size: 1rem;
+    /* color: var(--bgcolor); */
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    
+}
+.footer .smedia i{
+    color: var(--content);
+    padding-right: 2.5rem;
+}
+
